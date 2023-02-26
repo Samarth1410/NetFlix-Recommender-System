@@ -34,7 +34,7 @@ Prepare your dataset:
         4. Model Building and Tuning
         5. Building Flask API
         6. Pushing code to Github
-        7. Connecting to your Heroku account 
+        7. Connecting to your server account 
         8. Deploy App
 
 ## 🚀 About Me
