@@ -24,7 +24,9 @@ def create_similarity():
     # similarity = cosine_similarity(count_matrix)
     # DF = pd.DataFrame(similarity)
     # DF.to_csv('maximums.csv', index = False)
+    print(1)
     similarity = np.loadtxt('maximums.csv', delimiter=',')
+    print(2)
     return data,similarity
 
 def rcmd(m):
@@ -75,6 +77,7 @@ def home():
 @app.route("/similarity",methods=["POST"])
 def similarity():
     movie = request.form['name']
+    print(0)
     rc = rcmd(movie)
     if type(rc)==type('string'):
         return rc
