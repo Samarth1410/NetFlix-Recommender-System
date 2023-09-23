@@ -21,12 +21,12 @@ def create_similarity():
     count_matrix = cv.fit_transform(data['comb'])
     # creating a similarity score matrix
 
-    # similarity = cosine_similarity(count_matrix)
+    similarity = cosine_similarity(count_matrix)
     # DF = pd.DataFrame(similarity)
     # DF.to_csv('maximums.csv', index = False)
-    print(1)
-    similarity = np.loadtxt('maximums.csv', delimiter=',')
-    print(2)
+    # print(1)
+    # similarity = np.loadtxt('maximums.csv', delimiter=',')
+    # print(2)
     return data,similarity
 
 def rcmd(m):
